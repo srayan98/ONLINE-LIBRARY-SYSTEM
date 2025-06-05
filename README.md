@@ -1,12 +1,13 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is a simple React-based Online Library System application. It allows users to browse books by category, view book details, and add new books using Redux for state management. Routing is handled with React Router.
+Home page with book categories and popular books.
+Browse books by category or search by title/author.
+View detailed information about individual books.
+Add new books via a form with validation.
+Navigation and 404 Not Found page.
+State management using Redux.
+Responsive design with CSS.
+Installation Instructions:-
+1. Clone the Repository
+2. Make sure you have Node.js and npm installed. Then, run: npm install
+3. Start the development server: npm run dev
+4. Visit the app at: http://localhost:5173
