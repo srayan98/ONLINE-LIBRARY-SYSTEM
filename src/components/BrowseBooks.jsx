@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
+import "./BrowseBooks.css"
 
 const BrowseBooks = () => { // Define the BrowseBooks functional component
   const books = useSelector(state => state.books); // Access the booklist from Redux state
@@ -16,12 +17,12 @@ const BrowseBooks = () => { // Define the BrowseBooks functional component
   });
 
   return (
-    <div>
+    <div className="browse-container">
       <h1>Browse Books</h1>
-      <input type="text" placeholder="Search by title or author" value={search} onChange={e => setSearch(e.target.value)} />
-      <ul> {/* Display the filtered list of books */}
+      <input className="search-bar" type="text" placeholder="Search by title or author" value={search} onChange={e => setSearch(e.target.value)} />
+      <ul className="book-list"> {/* Display the filtered list of books */}
         {filtered.map(book => (
-          <li key={book.id}>
+          <li className="book-item" key={book.id}>
             {book.title} by {book.author} - <Link to={`/book/${book.id}`}>View Details</Link>
           </li>
         ))}

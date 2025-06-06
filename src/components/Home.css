@@ -1,0 +1,38 @@
+.home-container {
+  padding: 20px;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.category {
+  background-color: #dee2e6;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.category:hover {
+  background-color: #0e7ae7;
+}
+
+.popular-books {
+  margin-top: 30px;
+}
+
+.book-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: background 0.2s;
+}
+.book-card:hover {
+  background-color: palevioletred;
+}

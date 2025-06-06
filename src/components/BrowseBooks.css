@@ -1,0 +1,29 @@
+.browse-container {
+  padding: 20px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 220px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.book-item:hover {
+    transform: scale(1.1);
+    background-color: rgb(115, 109, 155);
+    color: aliceblue;
+}

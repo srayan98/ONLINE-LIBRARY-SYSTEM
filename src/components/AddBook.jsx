@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux'; // Importing useDispatch to dispatch Redux actions
 import { useNavigate } from 'react-router-dom'; // Importing useNavigate for redirecting users after form submission
 import { addBook } from '../utils/booksSlice';
+import "./AddBook.css"
 
 const AddBook = () => {
   const [form, setForm] = useState({ title: '', author: '', description: '', rating: '', category: '' });  // Setting up state to track form fields like title, author.
@@ -22,8 +23,9 @@ const AddBook = () => {
   };
 
   return ( // JSX to render the form on the page
-    <form onSubmit={handleSubmit}>
+    <form className="add-book-container" onSubmit={handleSubmit}>
       <h2>Add a Book</h2>
+      <br /><br />
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <input name="title" placeholder="Title" value={form.title} onChange={handleChange} />
       <br /><br /><br />
